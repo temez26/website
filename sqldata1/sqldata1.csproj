@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\aifootball.png" />
+    <None Include="wwwroot\images\ball.png" />
+    <None Include="wwwroot\images\cartoon ai.png" />
+    <None Include="wwwroot\images\diamonds ai.png" />
+    <None Include="wwwroot\images\dog in snowstorm.png" />
+  </ItemGroup>
+
+</Project>

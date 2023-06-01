@@ -1,0 +1,15 @@
+/* _content/sqldata1/Pages/Shared/_Layout.cshtml.rz.scp.css */
+.dark-mode-toggle[b-28st4szpe9] {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+    .dark-mode-toggle:hover[b-28st4szpe9] {
+        color: #dc3545;
+    }
+
+body.dark-mode[b-28st4szpe9] {
+    background-color: #121212;
+    color: #dcdcdc;
+}

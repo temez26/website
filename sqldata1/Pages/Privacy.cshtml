@@ -1,0 +1,39 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Images";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    
+</head>
+<body>
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="gallery">
+        <img class="scroll-animation" src="/images/aifootball.png" onclick="openModal(this)" alt="Picture 1">
+        <img class="scroll-animation" src="/images/ball.png" onclick="openModal(this)" alt="Picture 2">
+        <img class="scroll-animation" src="/images/cartoon ai.png" onclick="openModal(this)" alt="Picture 3">
+        <img class="scroll-animation" src="/images/diamonds ai.png" onclick="openModal(this)" alt="Picture 4">
+        <img class="scroll-animation" src="/images/dog in snowstorm.png" onclick="openModal(this)" alt="Picture 5">
+        <!-- Add more images here -->
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Modal Image">
+        <span class="prev" onclick="changePicture(-1)">&#10094;</span>
+        <span class="next" onclick="changePicture(1)">&#10095;</span>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Modal Image">
+    </div>
+
+   
+
+</body>
+</html>

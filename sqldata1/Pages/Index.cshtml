@@ -1,0 +1,70 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Welcome";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    
+</head>
+<body>
+    <div>
+    <h1>@ViewData["Title"]</h1>
+    <div class="align-picture-left">
+        <div class="gallery ">
+            <div class="image-container">
+                <img class="scroll-animation bigger-picture" src="/images/car.png" onclick="openModal(this)" alt="Picture 1">
+                <div class="image-text ">Text for Picture 1</div>
+            </div>
+            
+
+            </div>
+    </div>
+    <div class="align-picture-right">
+        <div class="gallery ">
+            <div class="image-container1 ">
+                <img class="scroll-animation " src="/images/spider.png" onclick="openModal(this)" alt="Picture 1">
+                <div class="image-text1">Text for Picture 1</div>
+            </div>
+
+
+        </div>
+    </div>
+   
+        
+    </div>
+    <br />
+    <div class="gallery-bottom">
+    <div class="gallery">
+        <div class="image-container">
+            <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 1">
+            <div class="image-text">Text for Picture 1</div>
+        </div>
+        <div class="gallery">
+        <div class="image-container">
+            <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 2">
+            <div class="image-text">Text for Picture 2</div>
+        </div>
+        </div>
+            <div class="gallery">
+        <div class="image-container">
+            <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 3">
+            <div class="image-text">Text for Picture 3</div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Modal Image">
+        <span class="prev" onclick="changePicture(-1)">&#10094;</span>
+        <span class="next" onclick="changePicture(1)">&#10095;</span>
+    </div>
+
+    
+</body>
+</html>
