@@ -60,21 +60,32 @@
             };
         }
 
-        // Change picture in fullscreen mode
-        function changePicture(n) {
-            var modalImg = document.getElementById("modalImg");
-            var galleryItems = document.getElementsByClassName("scroll-animation");
+        
+// Change picture in fullscreen mode
+function changePicture(n) {
+    var modalImg = document.getElementById("modalImg");
+    var galleryItems = document.getElementsByClassName("scroll-animation");
 
-            currentIndex += n; // Update the current index based on the direction
+    currentIndex += n; // Update the current index based on the direction
 
-            if (currentIndex < 0) {
-                currentIndex = galleryItems.length - 1;
-            } else if (currentIndex >= galleryItems.length) {
-                currentIndex = 0;
-            }
+    if (currentIndex < 0) {
+        currentIndex = galleryItems.length - 1;
+    } else if (currentIndex >= galleryItems.length) {
+        currentIndex = 0;
+    }
 
-            modalImg.src = galleryItems[currentIndex].src;
-        }
+    modalImg.src = galleryItems[currentIndex].src;
+
+    var prev = document.getElementsByClassName("prev")[0];
+    var next = document.getElementsByClassName("next")[0];
+
+    // Position the left arrow based on the current index
+    if (currentIndex === 0) {
+        prev.style.left = "-9999px"; // Hide the left arrow when viewing the first image
+    } else {
+        prev.style.left = "10px"; // Position the left arrow
+    }
+}
 
 
         // Close the modal

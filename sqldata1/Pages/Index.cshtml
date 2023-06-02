@@ -7,57 +7,117 @@
 <html>
 <head>
     <title>@ViewData["Title"]</title>
-    
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Your existing CSS styles here */
+
+      
+    </style>
 </head>
 <body>
     <div>
-    <h1>@ViewData["Title"]</h1>
-    <div class="align-picture-left">
-        <div class="gallery ">
-            <div class="image-container">
-                <img class="scroll-animation bigger-picture" src="/images/car.png" onclick="openModal(this)" alt="Picture 1">
-                <div class="image-text ">Text for Picture 1</div>
-            </div>
-            
-
-            </div>
-    </div>
-    <div class="align-picture-right">
-        <div class="gallery ">
-            <div class="image-container1 ">
-                <img class="scroll-animation " src="/images/spider.png" onclick="openModal(this)" alt="Picture 1">
-                <div class="image-text1">Text for Picture 1</div>
-            </div>
-
-
-        </div>
-    </div>
-   
-        
-    </div>
-    <br />
-    <div class="gallery-bottom">
-    <div class="gallery">
-        <div class="image-container">
-            <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 1">
-            <div class="image-text">Text for Picture 1</div>
-        </div>
-        <div class="gallery">
-        <div class="image-container">
-            <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 2">
-            <div class="image-text">Text for Picture 2</div>
-        </div>
-        </div>
+        <h1 class="text-white">@ViewData["Title"]</h1>
+        <div class="align-picture-left">
             <div class="gallery">
-        <div class="image-container">
-            <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 3">
-            <div class="image-text">Text for Picture 3</div>
+                <div class="image-container">
+                    <img class="scroll-animation bigger-picture" src="/images/car.png" onclick="openModal(this)" alt="Picture 1">
+                    <div class="image-text">
+                        <h1>Car</h1>
+                        <h2>Aenean porta enim eu massa. Fusce risus mi, placerat in imperdiet et, mollis sed risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut velit eget arcu dapibus sodales. Morbi auctor lectus nec mauris pulvinar rutrum. Nulla tellus nisi, congue id tristique vitae, lacinia vitae velit. Fusce viverra, mi in hendrerit vehicula, lacus ligula aliquam.</h2>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="align-picture-right">
+            <div class="gallery">
+                <div class="image-container1">
+                    <img class="scroll-animation" src="/images/spider.png" onclick="openModal(this)" alt="Picture 1">
+                    <div class="image-text">
+                        <h1>Spider</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide Boxes -->
+    <div class="container mt-5">
+        <h1 class="text-white">Fish</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <a class="card-header">
+                        <img src="/images/fish1.png" class="card-img-top" alt="Slide 1">
+                    </a>
+                    <div class="collapse">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Fish 1</h5>
+                            <p class="card-text text-white">Description of slide 1</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="card-header">
+                        <img src="/images/fish2.png" class="card-img-top" alt="Slide 2">
+                    </a>
+                    <div class="collapse">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Fish 2</h5>
+                            <p class="card-text text-white">Description of slide 2</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="card-header">
+                        <img src="/images/fish3.png" class="card-img-top" alt="Slide 3">
+                    </a>
+                    <div class="collapse">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Fish 3</h5>
+                            <p class="card-text text-white">Description of slide 3</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 ">
+        
+        <div class="card-deck">
+            <h1 class="text-white">Card Deck</h1>
+            <div class="card">
+                <img src="/images/card1.png" class="card-img-top" alt="Card 1">
+                <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/card2.png" class="card-img-top" alt="Card 2">
+                <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">Suspendisse lectus tortor, dignissim sit amet, adipiscing nec.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/card3.png" class="card-img-top" alt="Card 3">
+                <div class="card-body">
+                    <h5 class="card-title">Card 3</h5>
+                    <p class="card-text">Cras elementum ultrices diam. Maecenas ligula massa.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImg" alt="Modal Image">
@@ -65,6 +125,10 @@
         <span class="next" onclick="changePicture(1)">&#10095;</span>
     </div>
 
-    
+    <!-- Add Bootstrap JS (optional, if needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your existing JavaScript code here -->
 </body>
 </html>
+
+

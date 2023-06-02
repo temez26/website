@@ -1,7 +1,6 @@
 html {
     font-size: 14px;
-    color: red;
-    
+    color: white;
 }
 
 @media (min-width: 768px) {
@@ -13,13 +12,12 @@ html {
 
 
 body {
-    
-    color: #fff;
+    background: rgb(59,0,71);
+    background: linear-gradient(90deg, rgba(59,0,71,1) 1%, rgba(0,5,61,1) 50%, rgba(40,0,88,1) 99%);
+    color: #dcdcdc;
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease;
-    
-    
 }
 
 
@@ -149,6 +147,7 @@ body {
     }
 
 
+.prev,
 .next {
     position: absolute;
     top: 50%;
@@ -158,27 +157,39 @@ body {
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
     right: 10px;
 }
 
 
-
-
 body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background: linear-gradient(to bottom, #00111d, #007bff, #444444, #6c757d);
+    color: #dcdcdc;
+    transition: background 0.3s ease, color 0.3s ease;
 }
+
+
+
 
     .dark-mode-toggle:hover {
         color: #dc3545;
     }
 
 body.dark-mode {
-    background: linear-gradient(to bottom, #444444, #007bff, #6c757d);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(0,4,50,1) 50%, rgba(0,0,0,1) 99%);
     color: #dcdcdc;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+
 .content-hidden {
     display: none;
 }
@@ -198,24 +209,81 @@ body.dark-mode {
     
     
 }
-.image-container img {
-    width: 65%; /* Adjust the width as needed */
-    height: auto;
-    float: left;/* Maintain the aspect ratio */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensure the rounded corners are visible */
 }
-.image-container1 img {
-    width: 50%; /* Adjust the width as needed */
-    height: auto;
-    float: right;
-    
+
+    .image-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 2%;
+        width: 65%;
+        height: 70%;
+        bottom:0;
+        background: linear-gradient(to bottom right, #ff0000, #00ff00);
+        opacity: 0.7;
+        z-index: -1;
+        border-radius: 20px; /* Adjust the border radius as desired */
+    }
+
+    .image-container img {
+        width: 65%;
+        height: auto;
+        float: left;
+    }
+.image-container1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensure the rounded corners are visible */
+    float: right; /* Position on the right side */
+    margin-left: 10px; /* Add some spacing */
     
 }
 
+    .image-container1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 33%;
+        width: 65%;
+        height: 71%;
+        background: linear-gradient(to bottom right, #ffcc00, #66ff66); /* Adjust the gradient colors as desired */
+        opacity: 0.7;
+        z-index: -1;
+        border-radius: 20px; /* Adjust the border radius as desired */
+        float: right;
+        
+    }
+
+    .image-container1 img {
+        width: 65%;
+        height: auto;
+        float: right;
+    }
+
+
+
 .image-text1 {
-    margin-left: 34%; /* Adjust the margin as needed */
+    font-family: Arial, sans-serif; /* Specify the desired font */
+    font-size: 18px; /* Set the font size */
+    background-color: #000; /* Set the background color */
+    color: #9fbfd8; /* Set the font color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Adjust the margin as needed */
+    display: inline-block;
 }
 .image-text {
     margin-top: 2%;
+    font-family: Arial, sans-serif; /* Specify the desired font */
+    font-size: 24px; /* Set the font size */
+
+    color: #ffffff; /* Set the font color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .gallery-bottom {
@@ -252,3 +320,57 @@ body.dark-mode {
     }
 
 
+.image-text h2 {
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+/* Slide box styles */
+.card {
+    position: relative;
+    cursor: pointer;
+    top: 10%;
+    /* Adjust the background color and gradient */
+    background: rgba(0, 35, 57);
+    background: radial-gradient(circle, rgba(0, 35, 57, 1) 0%, rgba(0, 2, 24, 1) 89%);
+    /* Add transition to the transform property */
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        /* Apply the transform to scale the card */
+        transform: scale(1.05);
+    }
+
+    .card .card-header {
+        overflow: hidden;
+    }
+
+    .card .card-img-top {
+        opacity: 1; /* Set opacity to 1 for the image to be always visible */
+        transition: transform 0.3s ease;
+        transform: scale(1); /* Set initial scale to 1 */
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.1); /* Increase the scale on hover */
+    }
+
+    .card .collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        z-index: 1;
+    }
+
+    .card:hover .collapse {
+        display: block;
+    }
+
+
+.card-deck {
+    margin-top: 15.5%;
+}
