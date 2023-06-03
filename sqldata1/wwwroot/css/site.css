@@ -3,11 +3,6 @@ html {
     color: white;
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
 
 
 
@@ -197,7 +192,7 @@ body.dark-mode {
 
 .align-picture-left {
     float: left;
-    height: auto;
+    
     
 }
 
@@ -205,7 +200,7 @@ body.dark-mode {
 .align-picture-right {
     float: right;
     margin-top: 15%;
-    height: auto;
+    
     
     
 }
@@ -219,9 +214,9 @@ body.dark-mode {
         content: "";
         position: absolute;
         top: 0;
-        left: 2%;
+        left: 2.3%;
         width: 65%;
-        height: 70%;
+        height: 97%;
         bottom:0;
         background: linear-gradient(to bottom right, #ff0000, #00ff00);
         opacity: 0.7;
@@ -234,6 +229,10 @@ body.dark-mode {
         height: auto;
         float: left;
     }
+
+
+
+
 .image-container1 {
     position: relative;
     display: inline-block;
@@ -247,15 +246,16 @@ body.dark-mode {
         content: "";
         position: absolute;
         top: 0;
-        left: 33%;
+        right: 2.3%;
         width: 65%;
-        height: 71%;
-        background: linear-gradient(to bottom right, #ffcc00, #66ff66); /* Adjust the gradient colors as desired */
+        height: 97%;
+        background-color: #5efb00;
+        background-image: linear-gradient(229deg, #5efb00 7%, #FF2525 51%, #002675 100%);
+        /* Adjust the gradient colors as desired */
         opacity: 0.7;
         z-index: -1;
         border-radius: 20px; /* Adjust the border radius as desired */
         float: right;
-        
     }
 
     .image-container1 img {
@@ -266,7 +266,7 @@ body.dark-mode {
 
 
 
-.image-text1 {
+ .image-text1 {
     font-family: Arial, sans-serif; /* Specify the desired font */
     font-size: 18px; /* Set the font size */
     background-color: #000; /* Set the background color */
@@ -373,4 +373,259 @@ body.dark-mode {
 
 .card-deck {
     margin-top: 15.5%;
+}
+
+
+@media (max-width: 1199px) {
+    .h2-font {
+        font-size: 20px;
+    }
+
+    .image-container::before {
+        height: 95%;
+        left: 3%;
+    }
+
+    .image-container1::before {
+        height: 95%;
+        right: 3%;
+    }
+}
+
+@media (max-width: 991px) {
+    .h2-font {
+        font-size: 18px;
+    }
+
+    .image-container::before {
+        height: 95%;
+        left: 3%;
+    }
+
+    .image-container1::before {
+        height: 95%;
+        right: 3%;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 12px;
+    }
+
+    .h2-font {
+        font-size: 15px;
+    }
+
+    .image-container::before {
+        height: 93%;
+        left: 4%;
+    }
+
+    .image-container1::before {
+        height: 93%;
+        right: 4%;
+    }
+}
+
+@media (max-width: 575px) {
+    .image-container::before {
+        height: 95%;
+        left: 4.5%;
+    }
+
+    .image-container1::before {
+        height: 95%;
+        right: 4.5%;
+    }
+
+    .image-container img {
+        width: 65%;
+    }
+
+    .image-container1 img {
+        width: 65%;
+    }
+}
+
+@media (max-width: 420px) {
+    .image-container::before {
+        height: 94%;
+        left: 4.5%;
+    }
+
+    .image-container1::before {
+        height: 94%;
+        right: 4.5%;
+    }
+
+    .image-container img {
+        width: 64%;
+    }
+
+    .image-container1 img {
+        width: 64%;
+    }
+}
+
+@media (max-width: 367px) {
+    .image-container::before {
+        height: 93%;
+        left: 5%;
+    }
+
+    .image-container1::before {
+        height: 93%;
+        right: 5%;
+    }
+
+    .image-container img {
+        width: 63%;
+    }
+
+    .image-container1 img {
+        width: 63%;
+    }
+}
+
+@media (max-width: 285px) {
+    .image-container::before {
+        height: 92.5%;
+        left: 5.5%;
+    }
+
+    .image-container1::before {
+        height: 92.5%;
+        right: 5.5%;
+    }
+
+    .image-container img {
+        width: 62%;
+    }
+
+    .image-container1 img {
+        width: 62%;
+    }
+}
+
+@media (max-width: 240px) {
+    .image-container::before {
+        height: 91.5%;
+        left: 6%;
+    }
+
+    .image-container1::before {
+        height: 91.5%;
+        right: 6%;
+    }
+
+    .image-container img {
+        width: 61%;
+    }
+
+    .image-container1 img {
+        width: 61%;
+    }
+}
+
+@media (max-width: 220px) {
+    .image-container::before {
+        height: 90.5%;
+        left: 6.5%;
+    }
+
+    .image-container1::before {
+        height: 90.5%;
+        right: 6.5%;
+    }
+
+    .image-container img {
+        width: 60%;
+    }
+
+    .image-container1 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 200px) {
+    .image-container::before {
+        height: 90%;
+        left: 8%;
+    }
+
+    .image-container1::before {
+        height: 90%;
+        right: 8%;
+    }
+
+    .image-container img {
+        width: 60%;
+    }
+
+    .image-container1 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 180px) {
+    .image-container::before {
+        height: 88%;
+        left: 9%;
+    }
+
+    .image-container1::before {
+        height: 88%;
+        right: 9%;
+    }
+
+    .image-container img {
+        width: 60%;
+        margin-top: 7px;
+    }
+
+    .image-container1 img {
+        width: 60%;
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 150px) {
+    .image-container::before {
+        height: 86%;
+        left: 10%;
+    }
+
+    .image-container1::before {
+        height: 86%;
+        right: 10%;
+    }
+
+    .image-container img {
+        width: 60%;
+    }
+
+    .image-container1 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 100px) {
+    .image-container::before {
+        height: 84%;
+        left: 11%;
+    }
+
+    .image-container1::before {
+        height: 84%;
+        right: 11%;
+    }
+
+    .image-container img {
+        width: 60%;
+    }
+
+    .image-container1 img {
+        width: 60%;
+    }
 }
