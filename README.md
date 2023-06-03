@@ -1,1 +1,1 @@
-# website asp.net core
+# website asp.net core with responsive layout
