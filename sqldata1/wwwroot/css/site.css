@@ -375,6 +375,10 @@ body.dark-mode {
     margin-top: 15.5%;
 }
 
+.adjust-top {
+    margin-top:20%;
+    margin-left: 10%;
+}
 
 @media (max-width: 1199px) {
     .h2-font {
