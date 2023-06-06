@@ -427,7 +427,7 @@ body.dark-mode {
 
     
 }
-}
+
 
 @media (max-width: 991px) {
     .h2-font {
@@ -443,7 +443,10 @@ body.dark-mode {
         height: 95%;
         right: 3%;
     }
-
+    #dark {
+        position: relative;
+        right: 30%;
+    }
     
 }
    
@@ -474,7 +477,7 @@ body.dark-mode {
     }
     #dark {
         position:relative;
-        left: -40%;
+        left: -50%;
     }
 }
 
