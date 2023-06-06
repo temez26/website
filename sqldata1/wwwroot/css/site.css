@@ -1,6 +1,7 @@
 html {
     font-size: 14px;
     color: white;
+    height:100%;
 }
 
 
@@ -13,8 +14,11 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease;
+    min-height: 100vh;
 }
-
+footer {
+    margin-top:20%;
+}
 
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -56,8 +60,8 @@ body {
 }
 
     .gallery img {
-        width: 400px;
-        height: 400px;
+        width: 25%;
+        height: auto;
         margin: 10px;
         cursor: pointer;
         opacity: 0;
@@ -92,7 +96,8 @@ body {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 60px;
+    padding-top: 7%;
+    
     left: 0;
     top: 0;
     width: 100%;
@@ -374,24 +379,21 @@ body.dark-mode {
     margin-top: 15.5%;
 }
 
-.footer-settings {
-    margin-top: 50%;
-    background: rgba(0, 35, 57);
-    background: radial-gradient(circle, rgba(0, 35, 57, 1) 0%, rgba(0, 2, 24, 1) 89%);
-}
-.fa {
-   left:200%;
-}
-.fish-style {
-    width: 150px;
-    height: 150px;
+
+.adjust-margin {
+    margin-left:2.5%;
+    margin-top:1%;
 }
 
     /* Add a hover effect if you want */
     .fa:hover {
         opacity: 0.7;
     }
-
+@media (min-width: 1399px) {
+    .adjust-margin {
+        margin-left:1.2%;
+    }
+}
 @media (max-width: 1199px) {
     .h2-font {
         font-size: 20px;
@@ -442,9 +444,20 @@ body.dark-mode {
         height: 93%;
         right: 4%;
     }
+ 
+    footer {
+        
+        margin-top:25%;
+    }
 }
 
 @media (max-width: 575px) {
+    html {
+        font-size: 10px;
+    }
+    .h2-font {
+        font-size:12px;
+    }
     .image-container::before {
         height: 95%;
         left: 4.5%;
@@ -462,8 +475,15 @@ body.dark-mode {
     .image-container1 img {
         width: 65%;
     }
-}
 
+   
+   
+}
+@media (max-width: 485px) {
+    footer {
+        margin-top: 30%;
+    }
+}
 @media (max-width: 420px) {
     .image-container::before {
         height: 94%;
@@ -484,7 +504,15 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 400px) {
+    footer {
+        margin-top: 35%;
+    }
+}
 @media (max-width: 367px) {
+    html {
+        font-size: 8px;
+    }
     .image-container::before {
         height: 93%;
         left: 5%;
@@ -502,7 +530,7 @@ body.dark-mode {
     .image-container1 img {
         width: 63%;
     }
-}
+   
 
 @media (max-width: 285px) {
     .image-container::before {
@@ -522,9 +550,19 @@ body.dark-mode {
     .image-container1 img {
         width: 62%;
     }
+
+  
 }
 
+    @media (max-width: 259px) {
+        footer {
+            margin-top: 40%;
+        }
+    }
 @media (max-width: 240px) {
+    html {
+        font-size: 6px;
+    }
     .image-container::before {
         height: 91.5%;
         left: 6%;
@@ -582,6 +620,9 @@ body.dark-mode {
     .image-container1 img {
         width: 60%;
     }
+    footer {
+        margin-top: 43%;
+    }
 }
 
 @media (max-width: 180px) {
@@ -604,6 +645,9 @@ body.dark-mode {
         width: 60%;
         margin-top: 7px;
     }
+    footer {
+        margin-top: 50%;
+    }
 }
 
 @media (max-width: 150px) {
@@ -623,6 +667,9 @@ body.dark-mode {
 
     .image-container1 img {
         width: 60%;
+    }
+    footer {
+        margin-top:54%;
     }
 }
 
