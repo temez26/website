@@ -459,6 +459,26 @@ body.dark-mode {
         position: relative;
        left: 105%;
     }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .navbar-nav .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+
+
+
+    .navbar-collapse.collapse.show {
+        justify-content: center;
+    }
+
+        .navbar-collapse.collapse.show .navbar-toggler {
+            margin-right: auto;
+        }
     
 }
    
@@ -491,6 +511,26 @@ body.dark-mode {
         position:relative;
         left: 80%;
     }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .navbar-nav .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+
+
+
+    .navbar-collapse.collapse.show {
+        justify-content: center;
+    }
+
+        .navbar-collapse.collapse.show .navbar-toggler {
+            margin-right: auto;
+        }
 }
 
 @media (max-width: 575px) {
