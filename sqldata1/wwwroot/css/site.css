@@ -398,7 +398,10 @@ body.dark-mode {
         opacity: 0.7;
     }
 
-
+#dark {
+    position:relative;
+    left:250%;
+}
 @media (min-width: 1399px) {
     .adjust-margin {
         margin-left:1.2%;
@@ -406,7 +409,12 @@ body.dark-mode {
    
 }
 
-
+@media (max-width: 1399px) {
+    #dark {
+        position: relative;
+        left: 200%;
+    }
+}
 
 
 
@@ -423,6 +431,10 @@ body.dark-mode {
     .image-container1::before {
         height: 95%;
         right: 3%;
+    }
+    #dark {
+        position: relative;
+        left: 115%;
     }
 
     
@@ -445,7 +457,7 @@ body.dark-mode {
     }
     #dark {
         position: relative;
-        right: 30%;
+       left: 105%;
     }
     
 }
@@ -477,7 +489,7 @@ body.dark-mode {
     }
     #dark {
         position:relative;
-        left: -50%;
+        left: 80%;
     }
 }
 
@@ -528,7 +540,7 @@ body.dark-mode {
 
     #dark {
         position: relative;
-        left: 15%;
+        left: 70%;
     }
    
 }
@@ -558,7 +570,7 @@ body.dark-mode {
     }
     #dark {
         position: relative;
-        left: -5%;
+        left: 40%;
     }
 }
 
@@ -593,7 +605,7 @@ body.dark-mode {
     @media (max-width: 320px) {
         #dark {
             position: relative;
-            left: -25%;
+            left: 30%;
         }
     }
 
@@ -618,7 +630,7 @@ body.dark-mode {
         }
         #dark {
             position: relative;
-            left: -35%;
+            left: 10%;
         }
     }
 
@@ -719,6 +731,10 @@ body.dark-mode {
 
         footer {
             margin-top: 50%;
+        }
+        #dark {
+            position:relative;
+            left:-10%;
         }
     }
 
