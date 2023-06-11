@@ -30,4 +30,4 @@ This project is a simple demo website in ASP.NET Core environment that has homep
 - [Microsoft Learn](https://learn.microsoft.com/)
 
 ## link to website
-- [Link](https://superboi.azurewebsites.net/)
+- [website](https://superboi.azurewebsites.net/)
