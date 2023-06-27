@@ -25,9 +25,7 @@ This project is a simple demo website in ASP.NET Core environment that has homep
 
 - Teemu Kalmari.
 
-## Acknowledgments
 
-- [Microsoft Learn](https://learn.microsoft.com/)
 
 ## link to website
 - [website](https://superboi.azurewebsites.net/)
