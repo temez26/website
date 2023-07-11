@@ -28,4 +28,4 @@ This project is a simple demo website in ASP.NET Core environment that has homep
 
 
 ## link to website
-- [website](https://superboi.azurewebsites.net/)
+- [Link to website](https://superboi.azurewebsites.net/)
