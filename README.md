@@ -27,5 +27,5 @@ This project is a simple demo website in ASP.NET Core environment that has homep
 
 
 
-## link to website
+## Check the website
 - [Link to website](https://superboi.azurewebsites.net/)
