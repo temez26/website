@@ -1,5 +1,5 @@
 
-# website
+# Website
 
 This project is a simple demo website in ASP.NET Core environment that has homepage and gallery page and SQL database page where you can put client data email name lastname and phonenumber and SQL database will only work on locally.
 
